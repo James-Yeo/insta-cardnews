@@ -1,0 +1,55 @@
+name: Daily Instagram Card News
+
+on:
+  schedule:
+    # UTC 01:00 = KST 10:00
+    - cron: "0 1 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Node 설정
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: 컬러 이모지 폰트 설치
+        run: sudo apt-get update && sudo apt-get install -y fonts-noto-color-emoji
+
+      - name: 의존성 설치 (Playwright)
+        run: |
+          npm install
+          npx playwright install --with-deps chromium
+
+      - name: 날짜 계산 (KST)
+        id: d
+        run: echo "date=$(TZ=Asia/Seoul date +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+
+      - name: 카드 렌더링
+        env:
+          TZ: Asia/Seoul
+          OUT_DIR: out/${{ steps.d.outputs.date }}
+        run: node render.mjs
+
+      - name: 이미지 커밋 & 푸시
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f "out/${{ steps.d.outputs.date }}"
+          git commit -m "cards ${{ steps.d.outputs.date }}" || echo "변경 없음"
+          git push origin HEAD:main
+
+      - name: 인스타그램 게시
+        env:
+          TZ: Asia/Seoul
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IMAGE_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/main/out/${{ steps.d.outputs.date }}
+        run: node post_instagram.mjs

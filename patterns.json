@@ -1,0 +1,422 @@
+[
+  {"pattern": "I was about to ~", "meaning": "막 ~하려던 참이었다", "examples": [
+    {"en": "I was about to call you.", "ko": "너한테 막 전화하려던 참이었어."},
+    {"en": "I was about to leave when it started raining.", "ko": "막 나가려는데 비가 오기 시작했어."},
+    {"en": "I was about to say the same thing.", "ko": "나도 막 같은 말 하려던 참이었어."},
+    {"en": "She was about to cry.", "ko": "그녀는 막 울려던 참이었어."},
+    {"en": "We were about to order when they arrived.", "ko": "우리 막 주문하려는데 걔네가 도착했어."}
+  ]},
+  {"pattern": "I'd rather ~ than ...", "meaning": "...하느니 차라리 ~하겠다", "examples": [
+    {"en": "I'd rather walk than wait for the bus.", "ko": "버스 기다리느니 차라리 걷겠어."},
+    {"en": "I'd rather stay home than go to the party.", "ko": "파티 가느니 차라리 집에 있겠어."},
+    {"en": "I'd rather tell the truth than lie.", "ko": "거짓말하느니 차라리 사실대로 말하겠어."},
+    {"en": "I'd rather starve than eat that.", "ko": "저걸 먹느니 차라리 굶겠어."},
+    {"en": "I'd rather die than give up.", "ko": "포기하느니 차라리 죽겠어."}
+  ]},
+  {"pattern": "It turns out that ~", "meaning": "알고 보니 ~더라", "examples": [
+    {"en": "It turns out that he already knew.", "ko": "알고 보니 그는 이미 알고 있었어."},
+    {"en": "It turns out that the rumor was false.", "ko": "알고 보니 그 소문은 사실이 아니었어."},
+    {"en": "It turns out that she's my neighbor.", "ko": "알고 보니 그녀는 내 이웃이야."},
+    {"en": "It turns out that I was wrong.", "ko": "알고 보니 내가 틀렸더라."},
+    {"en": "It turns out that they were dating.", "ko": "알고 보니 걔네 사귀고 있었더라."}
+  ]},
+  {"pattern": "I can't help but ~", "meaning": "~하지 않을 수 없다", "examples": [
+    {"en": "I can't help but laugh.", "ko": "웃지 않을 수가 없네."},
+    {"en": "I can't help but worry about you.", "ko": "네 걱정을 하지 않을 수가 없어."},
+    {"en": "I can't help but wonder why.", "ko": "왜 그런지 궁금해하지 않을 수가 없어."},
+    {"en": "I can't help but agree with her.", "ko": "그녀에게 동의하지 않을 수가 없어."},
+    {"en": "I can't help but smile when I see him.", "ko": "걔를 보면 미소 짓지 않을 수가 없어."}
+  ]},
+  {"pattern": "There's no way ~", "meaning": "~일 리가 없다", "examples": [
+    {"en": "There's no way he forgot my birthday.", "ko": "걔가 내 생일을 잊었을 리가 없어."},
+    {"en": "There's no way she'd say that.", "ko": "그녀가 그런 말을 했을 리가 없어."},
+    {"en": "There's no way this is real.", "ko": "이게 진짜일 리가 없어."},
+    {"en": "There's no way we'll make it on time.", "ko": "우리가 제시간에 도착할 리가 없어."},
+    {"en": "There's no way I'm doing that.", "ko": "난 절대 그거 안 해."}
+  ]},
+  {"pattern": "I might as well ~", "meaning": "이왕이면 ~하는 게 낫겠다", "examples": [
+    {"en": "I might as well finish it now.", "ko": "이왕이면 지금 끝내는 게 낫겠어."},
+    {"en": "I might as well tell you the truth.", "ko": "차라리 너한테 사실대로 말하는 게 낫겠어."},
+    {"en": "Since we're here, we might as well eat.", "ko": "여기 온 김에, 그냥 먹는 게 낫겠어."},
+    {"en": "I might as well give it a try.", "ko": "이왕이면 한번 해보는 게 낫겠어."},
+    {"en": "We might as well leave now.", "ko": "그냥 지금 출발하는 게 낫겠어."}
+  ]},
+  {"pattern": "What if ~", "meaning": "만약 ~라면 어떡하지", "examples": [
+    {"en": "What if it rains tomorrow?", "ko": "내일 비 오면 어떡하지?"},
+    {"en": "What if we get lost?", "ko": "우리 길 잃으면 어떡하지?"},
+    {"en": "What if she says no?", "ko": "그녀가 안 된다고 하면 어떡하지?"},
+    {"en": "What if we tried a different way?", "ko": "다른 방법으로 해보면 어때?"},
+    {"en": "What if I fail?", "ko": "내가 실패하면 어떡하지?"}
+  ]},
+  {"pattern": "The thing is, ~", "meaning": "문제는 말이야, ~", "examples": [
+    {"en": "The thing is, I don't have time.", "ko": "문제는 말이야, 나 시간이 없어."},
+    {"en": "The thing is, I already made plans.", "ko": "사실은 말이야, 나 이미 약속이 있어."},
+    {"en": "The thing is, nobody told me.", "ko": "문제는 말이야, 아무도 나한테 말 안 해줬어."},
+    {"en": "The thing is, it's more complicated than that.", "ko": "문제는 말이야, 그게 그렇게 간단하지가 않아."},
+    {"en": "The thing is, I can't afford it.", "ko": "문제는 말이야, 나 그거 살 형편이 안 돼."}
+  ]},
+  {"pattern": "I keep ~ing", "meaning": "계속 ~하게 되네", "examples": [
+    {"en": "I keep forgetting his name.", "ko": "자꾸 걔 이름을 까먹네."},
+    {"en": "I keep making the same mistake.", "ko": "자꾸 같은 실수를 하네."},
+    {"en": "I keep checking my phone.", "ko": "계속 핸드폰을 확인하게 되네."},
+    {"en": "I keep thinking about it.", "ko": "자꾸 그 생각이 나네."},
+    {"en": "My computer keeps crashing.", "ko": "컴퓨터가 자꾸 멈추네."}
+  ]},
+  {"pattern": "It's not that ~, it's just ~", "meaning": "~라서가 아니라, 그냥 ~한 거야", "examples": [
+    {"en": "It's not that I'm angry, it's just I'm tired.", "ko": "화난 게 아니라, 그냥 피곤한 거야."},
+    {"en": "It's not that I don't like it, it's just too expensive.", "ko": "싫은 게 아니라, 그냥 너무 비싼 거야."},
+    {"en": "It's not that I forgot, it's just I was busy.", "ko": "잊은 게 아니라, 그냥 바빴던 거야."},
+    {"en": "It's not that she's mean, it's just shy.", "ko": "그녀가 못된 게 아니라, 그냥 수줍은 거야."},
+    {"en": "It's not that I don't care, it's just overwhelming.", "ko": "관심이 없어서가 아니라, 그냥 너무 벅찬 거야."}
+  ]},
+  {"pattern": "I doubt ~", "meaning": "~인지 의심스럽다, 아닐 것 같다", "examples": [
+    {"en": "I doubt he'll show up.", "ko": "걔가 올 것 같지 않아."},
+    {"en": "I doubt it will work.", "ko": "그게 될지 모르겠어."},
+    {"en": "I doubt she remembers me.", "ko": "그녀가 날 기억할 것 같지 않아."},
+    {"en": "I doubt we'll finish on time.", "ko": "우리가 제시간에 끝낼 것 같지 않아."},
+    {"en": "I doubt it's true.", "ko": "그게 사실일 것 같지 않아."}
+  ]},
+  {"pattern": "Chances are ~", "meaning": "아마 ~일 거야", "examples": [
+    {"en": "Chances are she's already left.", "ko": "아마 그녀는 이미 떠났을 거야."},
+    {"en": "Chances are it'll rain later.", "ko": "아마 이따 비 올 거야."},
+    {"en": "Chances are he forgot.", "ko": "아마 걔가 깜빡했을 거야."},
+    {"en": "Chances are they're stuck in traffic.", "ko": "아마 차가 막혀서 그럴 거야."},
+    {"en": "Chances are you're right.", "ko": "아마 네가 맞을 거야."}
+  ]},
+  {"pattern": "I was wondering if ~", "meaning": "혹시 ~인지 궁금해서요", "examples": [
+    {"en": "I was wondering if you could help me.", "ko": "혹시 저 좀 도와주실 수 있나 해서요."},
+    {"en": "I was wondering if you're free tonight.", "ko": "혹시 오늘 밤 시간 있으신가 해서요."},
+    {"en": "I was wondering if I could ask a favor.", "ko": "혹시 부탁 하나 드려도 될까 해서요."},
+    {"en": "I was wondering if it's still available.", "ko": "혹시 아직 있는지 궁금해서요."},
+    {"en": "I was wondering if we could reschedule.", "ko": "혹시 일정을 다시 잡을 수 있을까 해서요."}
+  ]},
+  {"pattern": "As far as I know, ~", "meaning": "내가 아는 한, ~", "examples": [
+    {"en": "As far as I know, the store is open.", "ko": "내가 아는 한, 그 가게는 열려 있어."},
+    {"en": "As far as I know, she's still single.", "ko": "내가 아는 한, 그녀는 아직 싱글이야."},
+    {"en": "As far as I know, nothing has changed.", "ko": "내가 아는 한, 바뀐 건 없어."},
+    {"en": "As far as I know, he's on vacation.", "ko": "내가 아는 한, 걔는 휴가 중이야."},
+    {"en": "As far as I know, the meeting is at 2.", "ko": "내가 아는 한, 회의는 2시야."}
+  ]},
+  {"pattern": "It's about time ~", "meaning": "슬슬 ~할 때가 됐다", "examples": [
+    {"en": "It's about time we left.", "ko": "슬슬 출발할 때가 됐어."},
+    {"en": "It's about time you got a job.", "ko": "이제 슬슬 너도 취직할 때가 됐지."},
+    {"en": "It's about time they fixed this.", "ko": "이거 진작 고쳤어야지."},
+    {"en": "It's about time we talked.", "ko": "우리 슬슬 얘기 좀 할 때가 됐어."},
+    {"en": "It's about time you apologized.", "ko": "너 진작 사과했어야지."}
+  ]},
+  {"pattern": "I'm not really into ~", "meaning": "~에 별로 관심 없어", "examples": [
+    {"en": "I'm not really into horror movies.", "ko": "나 공포영화 별로 안 좋아해."},
+    {"en": "I'm not really into sports.", "ko": "나 스포츠엔 별로 관심 없어."},
+    {"en": "I'm not really into cooking.", "ko": "나 요리엔 별로 흥미 없어."},
+    {"en": "I'm not really into that kind of music.", "ko": "나 그런 음악은 별로야."},
+    {"en": "I'm not really into parties.", "ko": "나 파티는 별로 안 좋아해."}
+  ]},
+  {"pattern": "You'd better ~", "meaning": "~하는 게 좋을걸", "examples": [
+    {"en": "You'd better hurry up.", "ko": "서두르는 게 좋을걸."},
+    {"en": "You'd better apologize to her.", "ko": "그녀한테 사과하는 게 좋을걸."},
+    {"en": "You'd better not be late.", "ko": "늦지 않는 게 좋을걸."},
+    {"en": "You'd better take an umbrella.", "ko": "우산 챙기는 게 좋을걸."},
+    {"en": "You'd better save your work.", "ko": "작업 저장해 두는 게 좋을걸."}
+  ]},
+  {"pattern": "I ended up ~ing", "meaning": "결국 ~하게 됐다", "examples": [
+    {"en": "I ended up staying home all day.", "ko": "결국 하루종일 집에 있었어."},
+    {"en": "I ended up buying it anyway.", "ko": "결국 그냥 사버렸어."},
+    {"en": "We ended up walking home.", "ko": "결국 걸어서 집에 왔어."},
+    {"en": "I ended up missing the train.", "ko": "결국 기차를 놓쳤어."},
+    {"en": "We ended up talking for hours.", "ko": "결국 몇 시간이나 얘기했어."}
+  ]},
+  {"pattern": "Let's just say ~", "meaning": "그냥 ~라고 해두자", "examples": [
+    {"en": "Let's just say it didn't go well.", "ko": "그냥 잘 안 됐다고 해두자."},
+    {"en": "Let's just say I learned my lesson.", "ko": "그냥 교훈을 얻었다고 해두자."},
+    {"en": "Let's just say she wasn't happy.", "ko": "그냥 그녀가 안 좋아했다고 해두자."},
+    {"en": "Let's just say it's complicated.", "ko": "그냥 좀 복잡하다고 해두자."},
+    {"en": "Let's just say I've seen better.", "ko": "그냥 더 나은 것도 봤다고 해두자."}
+  ]},
+  {"pattern": "I guess I could ~", "meaning": "뭐, ~할 수도 있겠지", "examples": [
+    {"en": "I guess I could try it.", "ko": "뭐, 한번 해볼 수도 있겠지."},
+    {"en": "I guess I could help you out.", "ko": "뭐, 도와줄 수도 있지."},
+    {"en": "I guess I could stay a bit longer.", "ko": "뭐, 좀 더 있을 수도 있지."},
+    {"en": "I guess I could give you a ride.", "ko": "뭐, 태워다 줄 수도 있지."},
+    {"en": "I guess I could ask him.", "ko": "뭐, 걔한테 물어볼 수도 있지."}
+  ]},
+  {"pattern": "No matter what ~", "meaning": "무슨 일이 있어도 ~", "examples": [
+    {"en": "No matter what happens, I'll be there.", "ko": "무슨 일이 있어도 갈게."},
+    {"en": "No matter what you say, I won't change my mind.", "ko": "네가 무슨 말을 해도, 내 마음은 안 바뀌어."},
+    {"en": "No matter what, don't give up.", "ko": "무슨 일이 있어도, 포기하지 마."},
+    {"en": "No matter what they think, be yourself.", "ko": "남들이 어떻게 생각하든, 너답게 살아."},
+    {"en": "No matter what it takes, we'll finish.", "ko": "무슨 수를 써서라도, 우린 끝낼 거야."}
+  ]},
+  {"pattern": "I'm supposed to ~", "meaning": "~하기로 되어 있다", "examples": [
+    {"en": "I'm supposed to meet her at 3.", "ko": "나 3시에 그녀를 만나기로 되어 있어."},
+    {"en": "I'm supposed to be working right now.", "ko": "나 지금 일하고 있어야 하는데."},
+    {"en": "You're not supposed to park here.", "ko": "여기 주차하면 안 돼."},
+    {"en": "We're supposed to wear a uniform.", "ko": "우리 유니폼 입기로 되어 있어."},
+    {"en": "I'm supposed to call him back.", "ko": "나 걔한테 다시 전화하기로 했어."}
+  ]},
+  {"pattern": "It doesn't matter if ~", "meaning": "~해도 상관없어", "examples": [
+    {"en": "It doesn't matter if we're late.", "ko": "우리가 늦어도 상관없어."},
+    {"en": "It doesn't matter if you win or lose.", "ko": "이기든 지든 상관없어."},
+    {"en": "It doesn't matter if it's expensive.", "ko": "비싸도 상관없어."},
+    {"en": "It doesn't matter if he comes or not.", "ko": "걔가 오든 안 오든 상관없어."},
+    {"en": "It doesn't matter if you don't understand yet.", "ko": "아직 이해 못 해도 괜찮아."}
+  ]},
+  {"pattern": "I'll see what I can do", "meaning": "내가 할 수 있는지 알아볼게", "examples": [
+    {"en": "I'll see what I can do about your request.", "ko": "네 요청에 대해 내가 할 수 있는지 알아볼게."},
+    {"en": "No promises, but I'll see what I can do.", "ko": "장담은 못 하지만, 할 수 있는지 알아볼게."},
+    {"en": "Leave it with me, I'll see what I can do.", "ko": "나한테 맡겨, 내가 어떻게든 해볼게."},
+    {"en": "I'll see what I can do to speed things up.", "ko": "좀 더 빨리 되게 할 수 있는지 알아볼게."},
+    {"en": "Let me see what I can do for you.", "ko": "널 위해 뭘 할 수 있을지 알아볼게."}
+  ]},
+  {"pattern": "That reminds me of ~", "meaning": "그거 보니까 ~ 생각난다", "examples": [
+    {"en": "That reminds me of my childhood.", "ko": "그거 보니까 내 어린 시절 생각나네."},
+    {"en": "That song reminds me of summer.", "ko": "그 노래 들으니까 여름 생각나."},
+    {"en": "This place reminds me of home.", "ko": "여기 오니까 고향 생각나네."},
+    {"en": "That reminds me of a funny story.", "ko": "그거 보니까 웃긴 얘기 하나 생각난다."},
+    {"en": "Your smile reminds me of your mom.", "ko": "네 미소 보니까 너희 엄마 생각나."}
+  ]},
+  {"pattern": "I'm kind of ~", "meaning": "나 좀 ~해", "examples": [
+    {"en": "I'm kind of nervous about the interview.", "ko": "나 인터뷰 때문에 좀 긴장돼."},
+    {"en": "I'm kind of hungry.", "ko": "나 좀 배고파."},
+    {"en": "I'm kind of busy right now.", "ko": "나 지금 좀 바빠."},
+    {"en": "I'm kind of disappointed.", "ko": "나 좀 실망했어."},
+    {"en": "I'm kind of into her.", "ko": "나 그녀한테 좀 마음 있어."}
+  ]},
+  {"pattern": "Feel free to ~", "meaning": "편하게 ~하세요", "examples": [
+    {"en": "Feel free to ask any questions.", "ko": "편하게 뭐든 물어보세요."},
+    {"en": "Feel free to help yourself.", "ko": "편하게 드세요."},
+    {"en": "Feel free to call me anytime.", "ko": "언제든 편하게 전화하세요."},
+    {"en": "Feel free to look around.", "ko": "편하게 둘러보세요."},
+    {"en": "Feel free to leave a comment.", "ko": "편하게 댓글 남겨 주세요."}
+  ]},
+  {"pattern": "I take it that ~", "meaning": "~인 것 같은데", "examples": [
+    {"en": "I take it that you're not coming.", "ko": "너 안 오는 것 같은데."},
+    {"en": "I take it that you two have met.", "ko": "두 분 서로 아시는 것 같네요."},
+    {"en": "I take it that everything went well.", "ko": "다 잘된 것 같네요."},
+    {"en": "I take it that you don't agree.", "ko": "동의 안 하시는 것 같은데요."},
+    {"en": "I take it that you've heard the news.", "ko": "소식 들으신 것 같네요."}
+  ]},
+  {"pattern": "It's worth ~ing", "meaning": "~할 가치가 있다", "examples": [
+    {"en": "This book is worth reading.", "ko": "이 책은 읽을 가치가 있어."},
+    {"en": "It's worth trying at least once.", "ko": "적어도 한 번쯤은 해볼 가치가 있어."},
+    {"en": "The view is worth the hike.", "ko": "그 경치는 등산할 가치가 있어."},
+    {"en": "It's worth waiting for.", "ko": "기다릴 가치가 있어."},
+    {"en": "That museum is worth visiting.", "ko": "그 박물관은 가볼 가치가 있어."}
+  ]},
+  {"pattern": "I have a feeling that ~", "meaning": "왠지 ~일 것 같아", "examples": [
+    {"en": "I have a feeling that it will work out.", "ko": "왠지 잘 될 것 같은 느낌이 들어."},
+    {"en": "I have a feeling that he's lying.", "ko": "왠지 걔가 거짓말하는 것 같아."},
+    {"en": "I have a feeling that we've met before.", "ko": "왠지 우리 전에 만난 적 있는 것 같아."},
+    {"en": "I have a feeling that today's going to be a good day.", "ko": "왠지 오늘 좋은 날일 것 같아."},
+    {"en": "I have a feeling that something's wrong.", "ko": "왠지 뭔가 잘못된 것 같아."}
+  ]},
+  {"pattern": "Let alone ~", "meaning": "~은커녕", "examples": [
+    {"en": "I can't even boil water, let alone cook a meal.", "ko": "물도 못 끓이는데, 요리는커녕."},
+    {"en": "He can't walk, let alone run.", "ko": "걷지도 못하는데, 뛰기는커녕."},
+    {"en": "I don't have time to sleep, let alone exercise.", "ko": "잘 시간도 없는데, 운동은커녕."},
+    {"en": "She hasn't called, let alone visited.", "ko": "전화도 안 하는데, 방문은커녕."},
+    {"en": "I can't afford a car, let alone a house.", "ko": "차도 못 사는데, 집은커녕."}
+  ]},
+  {"pattern": "There's a chance that ~", "meaning": "~할 가능성이 있어", "examples": [
+    {"en": "There's a chance that we'll finish early.", "ko": "우리가 일찍 끝낼 가능성이 있어."},
+    {"en": "There's a chance that it's canceled.", "ko": "취소됐을 가능성이 있어."},
+    {"en": "There's a chance that she'll say yes.", "ko": "그녀가 승낙할 가능성이 있어."},
+    {"en": "There's a chance that I'm wrong.", "ko": "내가 틀렸을 가능성도 있어."},
+    {"en": "There's a chance that it'll snow tonight.", "ko": "오늘 밤 눈 올 가능성이 있어."}
+  ]},
+  {"pattern": "I can't afford to ~", "meaning": "~할 여유가 없다", "examples": [
+    {"en": "I can't afford to miss this deadline.", "ko": "이 마감을 놓칠 여유가 없어."},
+    {"en": "I can't afford to lose my job.", "ko": "직장을 잃을 여유가 없어."},
+    {"en": "I can't afford to take a day off.", "ko": "하루 쉴 여유가 없어."},
+    {"en": "I can't afford to make a mistake now.", "ko": "지금 실수할 여유가 없어."},
+    {"en": "I can't afford to waste time.", "ko": "시간 낭비할 여유가 없어."}
+  ]},
+  {"pattern": "It just so happens that ~", "meaning": "공교롭게도 ~", "examples": [
+    {"en": "It just so happens that I know him.", "ko": "공교롭게도 나 그 사람 알아."},
+    {"en": "It just so happens that I'm free today.", "ko": "마침 나 오늘 시간 있어."},
+    {"en": "It just so happens that we're neighbors.", "ko": "공교롭게도 우리 이웃이야."},
+    {"en": "It just so happens that I have one left.", "ko": "마침 하나 남았어."},
+    {"en": "It just so happens that she was there too.", "ko": "공교롭게도 그녀도 거기 있었어."}
+  ]},
+  {"pattern": "I'd appreciate it if ~", "meaning": "~해 주시면 감사하겠습니다", "examples": [
+    {"en": "I'd appreciate it if you could reply soon.", "ko": "빨리 답장 주시면 감사하겠습니다."},
+    {"en": "I'd appreciate it if you kept this a secret.", "ko": "이거 비밀로 해주시면 감사하겠습니다."},
+    {"en": "I'd appreciate it if you could help.", "ko": "도와주시면 감사하겠습니다."},
+    {"en": "I'd appreciate it if you let me know.", "ko": "알려주시면 감사하겠습니다."},
+    {"en": "I'd appreciate it if you were on time.", "ko": "시간 맞춰 와주시면 감사하겠습니다."}
+  ]},
+  {"pattern": "On second thought, ~", "meaning": "다시 생각해보니, ~", "examples": [
+    {"en": "On second thought, let's not go there.", "ko": "다시 생각해보니, 거기 가지 말자."},
+    {"en": "On second thought, maybe you're right.", "ko": "다시 생각해보니, 네 말이 맞을지도."},
+    {"en": "On second thought, I'll have the coffee.", "ko": "다시 생각해보니, 그냥 커피로 할게."},
+    {"en": "On second thought, let's wait.", "ko": "다시 생각해보니, 좀 기다리자."},
+    {"en": "On second thought, I'd rather stay.", "ko": "다시 생각해보니, 그냥 있을래."}
+  ]},
+  {"pattern": "I'm used to ~ing", "meaning": "~하는 데 익숙하다", "examples": [
+    {"en": "I'm used to working late.", "ko": "나는 늦게까지 일하는 데 익숙해."},
+    {"en": "I'm used to the noise now.", "ko": "이제 그 소음에 익숙해졌어."},
+    {"en": "I'm used to living alone.", "ko": "혼자 사는 데 익숙해."},
+    {"en": "She's used to public speaking.", "ko": "그녀는 사람들 앞에서 말하는 데 익숙해."},
+    {"en": "I'm not used to waking up this early.", "ko": "이렇게 일찍 일어나는 데 익숙하지 않아."}
+  ]},
+  {"pattern": "It occurred to me that ~", "meaning": "문득 ~라는 생각이 들었다", "examples": [
+    {"en": "It occurred to me that I forgot my keys.", "ko": "문득 열쇠를 놓고 왔다는 생각이 들었어."},
+    {"en": "It occurred to me that she might be right.", "ko": "문득 그녀가 맞을지도 모른다는 생각이 들었어."},
+    {"en": "It occurred to me that I never thanked you.", "ko": "문득 너한테 고맙다는 말을 못 했다는 생각이 들었어."},
+    {"en": "It suddenly occurred to me that today is her birthday.", "ko": "문득 오늘이 그녀 생일이란 게 생각났어."},
+    {"en": "It never occurred to me that he'd say no.", "ko": "걔가 거절할 거란 생각은 해본 적도 없었어."}
+  ]},
+  {"pattern": "I might as well have ~ed", "meaning": "차라리 ~할걸 그랬다", "examples": [
+    {"en": "I might as well have stayed home.", "ko": "차라리 집에 있을걸 그랬어."},
+    {"en": "I might as well have walked; the traffic was terrible.", "ko": "차가 너무 막혀서, 차라리 걸을걸 그랬어."},
+    {"en": "I might as well have not gone.", "ko": "차라리 안 갈걸 그랬어."},
+    {"en": "I might as well have saved my money.", "ko": "차라리 돈을 아낄걸 그랬어."},
+    {"en": "I might as well have told him the truth.", "ko": "차라리 걔한테 사실대로 말할걸 그랬어."}
+  ]},
+  {"pattern": "Given that ~", "meaning": "~라는 점을 감안하면", "examples": [
+    {"en": "Given that it's raining, let's stay in.", "ko": "비가 오는 걸 감안하면, 그냥 집에 있자."},
+    {"en": "Given that he's new, he did well.", "ko": "신입인 걸 감안하면, 걔 잘했어."},
+    {"en": "Given that we have little time, let's focus.", "ko": "시간이 별로 없다는 점을 감안해서, 집중하자."},
+    {"en": "Given that it's a holiday, the roads will be busy.", "ko": "휴일인 걸 감안하면, 길이 막힐 거야."},
+    {"en": "Given that she's tired, let's reschedule.", "ko": "그녀가 피곤한 걸 감안해서, 일정을 다시 잡자."}
+  ]},
+  {"pattern": "I wouldn't say ~", "meaning": "꼭 ~라고는 안 하겠다", "examples": [
+    {"en": "I wouldn't say it's the best, but it's good.", "ko": "최고라고는 안 하겠지만, 좋긴 해."},
+    {"en": "I wouldn't say I'm an expert.", "ko": "내가 전문가라고까진 못 하겠어."},
+    {"en": "I wouldn't say it was easy.", "ko": "쉬웠다고는 못 하겠어."},
+    {"en": "I wouldn't say I hate it.", "ko": "싫어한다고까진 안 하겠어."},
+    {"en": "I wouldn't say we're close, but we talk.", "ko": "친하다고까진 못 해도, 얘기는 해."}
+  ]},
+  {"pattern": "That's what I'm saying", "meaning": "내 말이 그 말이야", "examples": [
+    {"en": "Exactly, that's what I'm saying!", "ko": "맞아, 내 말이 그 말이야!"},
+    {"en": "Right? That's what I'm saying.", "ko": "그렇지? 내 말이 그거야."},
+    {"en": "Yes, that's exactly what I'm saying.", "ko": "응, 그게 딱 내 말이야."},
+    {"en": "See? That's what I've been saying.", "ko": "봐, 내가 계속 그 말 했잖아."},
+    {"en": "That's what I'm saying, it makes no sense.", "ko": "내 말이 그거라니까, 말이 안 돼."}
+  ]},
+  {"pattern": "I take that back", "meaning": "방금 한 말 취소할게", "examples": [
+    {"en": "Actually, I take that back.", "ko": "사실, 방금 한 말 취소할게."},
+    {"en": "I take that back, you were right.", "ko": "방금 한 말 취소, 네가 맞았어."},
+    {"en": "Okay, I take it back. Sorry.", "ko": "알았어, 취소할게. 미안."},
+    {"en": "I take that back; it's actually pretty good.", "ko": "방금 말 취소, 사실 꽤 괜찮네."},
+    {"en": "I shouldn't have said that. I take it back.", "ko": "그 말 하지 말걸. 취소할게."}
+  ]},
+  {"pattern": "For what it's worth, ~", "meaning": "참고로 말하자면, ~", "examples": [
+    {"en": "For what it's worth, I liked your idea.", "ko": "참고로 말하자면, 난 네 아이디어가 좋았어."},
+    {"en": "For what it's worth, I think you did great.", "ko": "도움이 될진 모르겠지만, 난 네가 잘했다고 생각해."},
+    {"en": "For what it's worth, he apologized to me too.", "ko": "참고로, 걔가 나한테도 사과했어."},
+    {"en": "For what it's worth, you're not alone.", "ko": "위로가 될진 모르겠지만, 너 혼자가 아니야."},
+    {"en": "For what it's worth, I'd choose you.", "ko": "참고로, 난 널 택할 거야."}
+  ]},
+  {"pattern": "I hate to say it, but ~", "meaning": "이런 말 하기 싫지만, ~", "examples": [
+    {"en": "I hate to say it, but you were right.", "ko": "이런 말 하기 싫지만, 네가 맞았어."},
+    {"en": "I hate to say it, but we're out of time.", "ko": "이런 말 하기 싫지만, 시간이 다 됐어."},
+    {"en": "I hate to say it, but it's not working.", "ko": "이런 말 하기 싫지만, 이거 안 되고 있어."},
+    {"en": "I hate to say it, but he has a point.", "ko": "인정하기 싫지만, 걔 말도 일리가 있어."},
+    {"en": "I hate to say it, but we need to cancel.", "ko": "이런 말 하기 싫지만, 취소해야겠어."}
+  ]},
+  {"pattern": "I'm dying to ~", "meaning": "너무 ~하고 싶어", "examples": [
+    {"en": "I'm dying to see that movie.", "ko": "그 영화 너무 보고 싶어."},
+    {"en": "I'm dying to try that new restaurant.", "ko": "그 새 식당 너무 가보고 싶어."},
+    {"en": "I'm dying to know what happened.", "ko": "무슨 일이 있었는지 너무 궁금해."},
+    {"en": "I'm dying to go on vacation.", "ko": "너무 휴가 가고 싶어."},
+    {"en": "I'm dying for a cup of coffee.", "ko": "커피 한 잔 너무 마시고 싶어."}
+  ]},
+  {"pattern": "It beats me why ~", "meaning": "왜 ~인지 도무지 모르겠다", "examples": [
+    {"en": "It beats me why he did that.", "ko": "걔가 왜 그랬는지 도무지 모르겠어."},
+    {"en": "It beats me why she's still upset.", "ko": "그녀가 왜 아직도 화나 있는지 모르겠어."},
+    {"en": "It beats me why this isn't working.", "ko": "이게 왜 안 되는지 도무지 모르겠어."},
+    {"en": "It beats me why they canceled.", "ko": "걔네가 왜 취소했는지 모르겠어."},
+    {"en": "It beats me how he passed.", "ko": "걔가 어떻게 통과했는지 모르겠어."}
+  ]},
+  {"pattern": "I'll take your word for it", "meaning": "네 말 믿을게", "examples": [
+    {"en": "Okay, I'll take your word for it.", "ko": "알았어, 네 말 믿을게."},
+    {"en": "I've never been there, but I'll take your word for it.", "ko": "나 거기 안 가봤지만, 네 말 믿을게."},
+    {"en": "If you say so, I'll take your word for it.", "ko": "네가 그렇다면, 네 말 믿을게."},
+    {"en": "I'll take your word for it this time.", "ko": "이번엔 네 말 믿을게."},
+    {"en": "I can't check now, so I'll take your word for it.", "ko": "지금 확인 못 하니까, 네 말 믿을게."}
+  ]},
+  {"pattern": "Speaking of which, ~", "meaning": "말이 나온 김에, ~", "examples": [
+    {"en": "Speaking of which, did you call her back?", "ko": "말이 나온 김에, 걔한테 다시 전화했어?"},
+    {"en": "Speaking of which, where's my charger?", "ko": "그러고 보니, 내 충전기 어디 있지?"},
+    {"en": "Speaking of which, are you still coming tonight?", "ko": "말 나온 김에, 오늘 밤 아직 오는 거지?"},
+    {"en": "Speaking of food, I'm starving.", "ko": "음식 얘기 나온 김에, 나 배고파 죽겠어."},
+    {"en": "Speaking of which, I owe you money.", "ko": "말 나온 김에, 나 너한테 돈 갚아야 하지."}
+  ]},
+  {"pattern": "I'm not one to ~", "meaning": "나는 ~하는 사람은 아니야", "examples": [
+    {"en": "I'm not one to complain, but this is too much.", "ko": "나 불평하는 사람은 아닌데, 이건 너무하네."},
+    {"en": "I'm not one to gossip.", "ko": "나 남 얘기 하는 사람 아니야."},
+    {"en": "I'm not one to give up easily.", "ko": "나 쉽게 포기하는 사람 아니야."},
+    {"en": "I'm not one to judge.", "ko": "나 남 함부로 판단하는 사람 아니야."},
+    {"en": "I'm not one to brag, but I aced it.", "ko": "자랑하는 건 아닌데, 나 완벽하게 해냈어."}
+  ]},
+  {"pattern": "It's not like ~", "meaning": "~인 것도 아니잖아", "examples": [
+    {"en": "It's not like we have a choice.", "ko": "선택지가 있는 것도 아니잖아."},
+    {"en": "It's not like I did it on purpose.", "ko": "내가 일부러 그런 것도 아니잖아."},
+    {"en": "It's not like she'll notice.", "ko": "그녀가 알아챌 것도 아니잖아."},
+    {"en": "It's not like it's the end of the world.", "ko": "세상이 끝나는 것도 아니잖아."},
+    {"en": "It's not like you told me.", "ko": "네가 나한테 말해준 것도 아니잖아."}
+  ]},
+  {"pattern": "I owe you one", "meaning": "신세 졌네, 나중에 갚을게", "examples": [
+    {"en": "Thanks for the help, I owe you one.", "ko": "도와줘서 고마워, 신세 졌네."},
+    {"en": "You saved me. I owe you one.", "ko": "너 덕분에 살았어. 신세 졌어."},
+    {"en": "I owe you one for covering my shift.", "ko": "내 근무 대신해줘서 신세 졌어."},
+    {"en": "Seriously, I owe you big time.", "ko": "진짜, 크게 신세 졌어."},
+    {"en": "Next round's on me. I owe you one.", "ko": "다음 한 잔은 내가 살게. 신세 졌어."}
+  ]},
+  {"pattern": "I'll get back to you on that", "meaning": "그건 나중에 다시 알려줄게", "examples": [
+    {"en": "Let me check and I'll get back to you on that.", "ko": "확인해보고 나중에 다시 알려줄게."},
+    {"en": "Good question. I'll get back to you on that.", "ko": "좋은 질문이네요. 그건 다시 알려드릴게요."},
+    {"en": "I'm not sure yet, I'll get back to you on that.", "ko": "아직 잘 모르겠어, 그건 다시 알려줄게."},
+    {"en": "Give me a day and I'll get back to you on that.", "ko": "하루만 주면 그건 다시 알려줄게."},
+    {"en": "I'll get back to you on the price.", "ko": "가격은 다시 알려드릴게요."}
+  ]},
+  {"pattern": "That being said, ~", "meaning": "그렇긴 하지만, ~", "examples": [
+    {"en": "That being said, we should still try.", "ko": "그렇긴 하지만, 그래도 시도는 해봐야지."},
+    {"en": "It's expensive. That being said, it's worth it.", "ko": "비싸긴 해. 그렇긴 해도, 그만한 값어치는 있어."},
+    {"en": "That being said, I understand your point.", "ko": "그렇긴 하지만, 네 말도 이해해."},
+    {"en": "He's talented. That being said, he needs practice.", "ko": "걔 재능 있어. 그렇긴 해도, 연습은 필요해."},
+    {"en": "That being said, let's give it a shot.", "ko": "그렇긴 하지만, 한번 해보자."}
+  ]},
+  {"pattern": "I couldn't agree more", "meaning": "완전 동의해", "examples": [
+    {"en": "I couldn't agree more with your point.", "ko": "네 의견에 완전 동의해."},
+    {"en": "Exactly! I couldn't agree more.", "ko": "바로 그거야! 완전 동의해."},
+    {"en": "I couldn't agree more; it's about time.", "ko": "완전 동의해, 진작 그랬어야지."},
+    {"en": "Honestly, I couldn't agree more.", "ko": "솔직히, 완전 동의해."},
+    {"en": "I couldn't agree more with what she said.", "ko": "그녀가 한 말에 완전 동의해."}
+  ]},
+  {"pattern": "I'll take that as a yes", "meaning": "그럼 예스로 알아들을게", "examples": [
+    {"en": "No answer? I'll take that as a yes.", "ko": "대답이 없네? 예스로 알아들을게."},
+    {"en": "You're smiling, so I'll take that as a yes.", "ko": "웃는 거 보니, 예스로 알아들을게."},
+    {"en": "I'll take that as a yes, then.", "ko": "그럼 예스로 알아들을게."},
+    {"en": "Silence? I'll take that as a yes.", "ko": "조용하네? 예스로 알아들을게."},
+    {"en": "You nodded, so I'll take that as a yes.", "ko": "고개 끄덕였으니, 예스로 알아들을게."}
+  ]},
+  {"pattern": "It slipped my mind", "meaning": "깜빡했어", "examples": [
+    {"en": "Sorry, it completely slipped my mind.", "ko": "미안, 완전히 깜빡했어."},
+    {"en": "I meant to call, but it slipped my mind.", "ko": "전화하려고 했는데, 깜빡했어."},
+    {"en": "Your birthday totally slipped my mind.", "ko": "네 생일을 완전 깜빡했어."},
+    {"en": "It slipped my mind that we had a meeting.", "ko": "회의 있는 걸 깜빡했어."},
+    {"en": "I'm sorry, the appointment slipped my mind.", "ko": "죄송해요, 약속을 깜빡했어요."}
+  ]},
+  {"pattern": "I'm all for ~", "meaning": "나는 ~에 완전 찬성이야", "examples": [
+    {"en": "I'm all for taking a break.", "ko": "나는 쉬는 거 완전 찬성이야."},
+    {"en": "I'm all for it.", "ko": "나 완전 찬성이야."},
+    {"en": "I'm all for trying something new.", "ko": "새로운 거 해보는 거 완전 찬성이야."},
+    {"en": "I'm all for saving money.", "ko": "돈 아끼는 거 완전 찬성이야."},
+    {"en": "I'm all for ordering pizza tonight.", "ko": "오늘 밤 피자 시키는 거 완전 찬성이야."}
+  ]},
+  {"pattern": "Let's face it, ~", "meaning": "인정할 건 인정하자, ~", "examples": [
+    {"en": "Let's face it, we're not ready yet.", "ko": "인정할 건 인정하자, 우리 아직 준비 안 됐어."},
+    {"en": "Let's face it, nobody's perfect.", "ko": "인정하자, 완벽한 사람은 없어."},
+    {"en": "Let's face it, it's too late now.", "ko": "인정하자, 이제 너무 늦었어."},
+    {"en": "Let's face it, we need help.", "ko": "인정하자, 우린 도움이 필요해."},
+    {"en": "Let's face it, that plan won't work.", "ko": "인정하자, 그 계획은 안 먹혀."}
+  ]},
+  {"pattern": "I'll leave it up to you", "meaning": "네가 알아서 결정해", "examples": [
+    {"en": "I don't mind either way, I'll leave it up to you.", "ko": "난 둘 다 괜찮으니까, 네가 알아서 결정해."},
+    {"en": "It's your call, I'll leave it up to you.", "ko": "네가 정할 일이야, 네가 알아서 해."},
+    {"en": "I'll leave it up to you to decide.", "ko": "결정은 너한테 맡길게."},
+    {"en": "Dinner or a movie? I'll leave it up to you.", "ko": "저녁이야 영화야? 네가 정해."},
+    {"en": "I'll leave it up to you this time.", "ko": "이번엔 네가 알아서 결정해."}
+  ]}
+]

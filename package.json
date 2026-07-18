@@ -1,0 +1,9 @@
+{
+  "name": "insta-cardnews",
+  "version": "1.0.0",
+  "private": true,
+  "description": "매일 영어 패턴 카드뉴스를 인스타그램에 자동 게시",
+  "dependencies": {
+    "playwright": "^1.48.0"
+  }
+}
