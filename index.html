@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>영어 카드뉴스 생성기</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;0,800;0,900;1,800&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="patterns.js"></script>
+<style>
+  :root{
+    --en:'Nunito','Segoe UI',sans-serif;
+    --ko:'Noto Sans KR','Malgun Gothic',sans-serif;
+    --ink:#4a4458; --ink-soft:#8b8598;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:var(--ko);background:#f4f1f7;color:var(--ink);padding:24px 16px 80px;-webkit-font-smoothing:antialiased;}
+  .bar{max-width:1160px;margin:0 auto 24px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:center;}
+  .bar h1{font-size:20px;font-weight:900;color:#6a5acd;letter-spacing:-.02em;}
+  .bar p{font-size:13px;color:var(--ink-soft);width:100%;text-align:center;line-height:1.6;}
+  select{font-family:var(--ko);font-size:14px;font-weight:600;color:var(--ink);padding:10px 14px;border:2px solid #e3ddf0;border-radius:12px;background:#fff;cursor:pointer;max-width:320px;}
+  .btn{font-family:var(--ko);font-weight:700;font-size:14px;border:none;cursor:pointer;background:#a98bff;color:#fff;padding:11px 20px;border-radius:999px;box-shadow:0 6px 16px rgba(169,139,255,.4);transition:transform .1s;}
+  .btn:active{transform:scale(.96);}
+  .btn.ghost{background:#fff;color:#6a5acd;box-shadow:0 4px 12px rgba(0,0,0,.06);}
+  .deck{display:grid;grid-template-columns:repeat(auto-fill,360px);gap:34px 26px;justify-content:center;max-width:1160px;margin:0 auto;}
+  .slot{display:flex;flex-direction:column;align-items:center;gap:12px;}
+  .thumb{width:360px;height:360px;border-radius:26px;overflow:hidden;box-shadow:0 14px 34px rgba(90,70,120,.18);}
+  .card{width:1080px;height:1080px;transform:scale(.33333);transform-origin:top left;position:relative;overflow:hidden;}
+  .inner{position:absolute;inset:0;padding:96px 92px;display:flex;flex-direction:column;}
+  .blob{position:absolute;border-radius:50%;filter:blur(8px);opacity:.55;}
+  .tag{display:inline-flex;align-items:center;gap:14px;font-family:var(--ko);font-weight:700;font-size:30px;padding:16px 30px;border-radius:999px;align-self:flex-start;background:#fff;}
+  .dot{width:18px;height:18px;border-radius:50%;}
+  .foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;font-family:var(--ko);font-weight:500;font-size:30px;color:var(--ink-soft);gap:20px;}
+  .foot .hd{font-weight:700;}
+  .foot .patt-ref{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .mid{margin:auto 0;}
+  .patt{font-family:var(--en);font-weight:900;line-height:1.06;letter-spacing:-.02em;color:var(--ink);}
+  .mean{font-family:var(--ko);font-weight:700;font-size:56px;margin-top:34px;color:#6f6880;}
+  .swipe{font-family:var(--en);font-weight:800;font-size:34px;letter-spacing:.05em;}
+  .num{font-family:var(--en);font-weight:900;font-size:30px;color:#fff;padding:14px 28px;border-radius:999px;align-self:flex-start;}
+  .body{margin:auto 0;}
+  .en{font-family:var(--en);font-weight:800;line-height:1.18;letter-spacing:-.015em;color:var(--ink);}
+  .ko{font-family:var(--ko);font-weight:500;font-size:46px;line-height:1.4;margin-top:34px;color:#7a7488;}
+  .bar-accent{width:120px;height:12px;border-radius:999px;margin-top:52px;}
+  .outro .inner{align-items:center;justify-content:center;text-align:center;}
+  .emoji{font-size:120px;}
+  .big{font-family:var(--ko);font-weight:900;font-size:76px;line-height:1.25;margin-top:20px;color:var(--ink);}
+  .sub{font-family:var(--ko);font-weight:500;font-size:44px;margin-top:30px;color:#7a7488;}
+  .cta{font-family:var(--en);font-weight:900;font-size:46px;margin-top:64px;padding:26px 52px;border-radius:999px;color:#fff;}
+</style>
+</head>
+<body>
+  <div class="bar">
+    <h1>🍬 영어 카드뉴스 생성기</h1>
+    <select id="picker" onchange="render(+this.value)"></select>
+    <button class="btn" onclick="exportAll()">전체 PNG 저장</button>
+    <p>드롭다운에서 패턴 선택(기본=오늘) · 카드 아래 버튼으로 개별 저장 · 1080×1080 인스타 정사각 · @Eng.bite_</p>
+  </div>
+  <div class="deck" id="deck"></div>
+
+<script>
+const HANDLE = "@Eng.bite_";
+const palettes = [
+  { bg1:"#FFE5EC", bg2:"#FFD1DC", accent:"#FF8FAB", ink:"#B14B69" },
+  { bg1:"#FFF4D6", bg2:"#FFE9AE", accent:"#FFC24B", ink:"#B4841E" },
+  { bg1:"#DFF5E8", bg2:"#C4EFD6", accent:"#5FC58B", ink:"#37855A" },
+  { bg1:"#E3ECFF", bg2:"#CFDDFF", accent:"#6EA8FE", ink:"#3E64B0" },
+  { bg1:"#ECE3FF", bg2:"#DCCBFF", accent:"#A98BFF", ink:"#6A4FB0" }
+];
+const PATTERNS = window.PATTERNS || [];
+
+// 문장 길이에 따라 글자 크기 자동 조절
+function fit(text, steps){ const n=text.length; for(const [max,size] of steps){ if(n<=max) return size; } return steps[steps.length-1][1]; }
+const pattSize = t => fit(t, [[12,120],[18,98],[26,78],[34,62],[99,52]]);
+const enSize   = t => fit(t, [[22,86],[30,74],[40,62],[52,52],[99,44]]);
+
+function dayOfYear(d){ const s=new Date(d.getFullYear(),0,0); return Math.floor((d-s)/86400000); }
+function esc(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+const deck = document.getElementById('deck');
+const picker = document.getElementById('picker');
+
+// 드롭다운 채우기
+PATTERNS.forEach((p,i)=>{ const o=document.createElement('option'); o.value=i; o.textContent=`${i+1}. ${p.pattern}`; picker.appendChild(o); });
+const todayIdx = PATTERNS.length ? dayOfYear(new Date()) % PATTERNS.length : 0;
+
+function slot(cardHTML, filename, idx){
+  const wrap=document.createElement('div'); wrap.className='slot';
+  wrap.innerHTML=`<div class="thumb"><div class="card" id="card-${idx}">${cardHTML}</div></div>
+    <button class="btn ghost" onclick="exportCard(${idx},'${filename}')">이 카드 저장</button>`;
+  deck.appendChild(wrap);
+}
+function blobs(c1,c2){
+  return `<div class="blob" style="width:360px;height:360px;background:${c1};top:-120px;right:-90px"></div>
+          <div class="blob" style="width:280px;height:280px;background:${c2};bottom:-110px;left:-80px"></div>`;
+}
+
+function render(idx){
+  if(!PATTERNS.length){ deck.innerHTML='<p style="color:#b14b69">patterns.js를 불러오지 못했습니다.</p>'; return; }
+  const item = PATTERNS[idx];
+  picker.value = idx;
+  deck.innerHTML='';
+
+  // intro
+  slot(`<div class="inner intro" style="background:linear-gradient(150deg,#F3ECFF,#FFE9F3)">
+    ${blobs('#E4D6FF','#FFD1E6')}
+    <div class="tag" style="color:#8a6bd8"><span class="dot" style="background:#a98bff"></span>오늘의 영어 표현</div>
+    <div class="mid">
+      <div class="patt" style="font-size:${pattSize(item.pattern)}px">${esc(item.pattern)}</div>
+      <div class="mean">${esc(item.meaning)}</div>
+    </div>
+    <div class="foot"><span class="hd" style="color:#8a6bd8">${HANDLE}</span><span class="swipe" style="color:#c48fd8">SWIPE →</span></div>
+  </div>`, 'card_01_intro.png', 0);
+
+  // examples
+  item.examples.forEach((ex,i)=>{
+    const p=palettes[i%palettes.length];
+    slot(`<div class="inner" style="background:linear-gradient(150deg,${p.bg1},${p.bg2})">
+      ${blobs('rgba(255,255,255,.6)', p.accent+'55')}
+      <div class="num" style="background:${p.accent}">${i+1} / ${item.examples.length}</div>
+      <div class="body">
+        <div class="en" style="font-size:${enSize(ex.en)}px">${esc(ex.en)}</div>
+        <div class="bar-accent" style="background:${p.accent}"></div>
+        <div class="ko">${esc(ex.ko)}</div>
+      </div>
+      <div class="foot"><span class="patt-ref" style="color:${p.ink}">${esc(item.pattern)}</span><span class="hd" style="color:${p.ink}">${HANDLE}</span></div>
+    </div>`, `card_${String(i+2).padStart(2,'0')}_ex${i+1}.png`, i+1);
+  });
+
+  // outro
+  slot(`<div class="inner outro" style="background:linear-gradient(150deg,#DFF5E8,#E3ECFF)">
+    ${blobs('#C4EFD6','#CFDDFF')}
+    <div>
+      <div class="emoji">🎉</div>
+      <div class="big">오늘도<br>한 문장 완성!</div>
+      <div class="sub">저장해두고 매일 복습해요 📌</div>
+      <div class="cta" style="background:#7fb8a0">팔로우 ${HANDLE}</div>
+    </div>
+  </div>`, 'card_07_outro.png', item.examples.length+1);
+}
+
+// PNG 내보내기
+async function renderCard(idx){
+  const card=document.getElementById('card-'+idx);
+  const holder=document.createElement('div'); holder.style.cssText='position:fixed;left:-99999px;top:0;';
+  const clone=card.cloneNode(true); clone.style.transform='none';
+  holder.appendChild(clone); document.body.appendChild(holder);
+  const canvas=await html2canvas(clone,{width:1080,height:1080,scale:2,backgroundColor:null});
+  document.body.removeChild(holder); return canvas;
+}
+async function exportCard(idx,filename){
+  const canvas=await renderCard(idx);
+  const a=document.createElement('a'); a.href=canvas.toDataURL('image/png'); a.download=filename; a.click();
+}
+async function exportAll(){
+  const cards=document.querySelectorAll('.card');
+  for(let i=0;i<cards.length;i++){ await exportCard(i,`card_${String(i+1).padStart(2,'0')}.png`); await new Promise(r=>setTimeout(r,400)); }
+}
+
+render(todayIdx);
+</script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+# OS / 편집기 잡동사니
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.swp
+.vscode/
+.idea/
+
+# 내보낸 카드 이미지 (필요하면 주석 처리)
+*.png
