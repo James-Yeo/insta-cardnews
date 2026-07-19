@@ -3,7 +3,10 @@
 //   IG_ACCESS_TOKEN   : 현재 장기 토큰
 //   GH_PAT            : 이 저장소의 'Secrets: read/write' 권한을 가진 PAT
 //   GITHUB_REPOSITORY : owner/repo (Actions가 자동 주입)
-import sodium from 'libsodium-wrappers';
+// libsodium-wrappers는 ESM 경로 해석 버그가 있어 CommonJS로 불러온다.
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
+const sodium = require('libsodium-wrappers');
 
 const TOKEN = process.env.IG_ACCESS_TOKEN;
 const PAT = process.env.GH_PAT;
