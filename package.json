@@ -4,6 +4,7 @@
   "private": true,
   "description": "매일 영어 패턴 카드뉴스를 인스타그램에 자동 게시",
   "dependencies": {
+    "libsodium-wrappers": "^0.7.15",
     "playwright": "^1.48.0"
   }
 }
