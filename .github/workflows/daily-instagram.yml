@@ -2,12 +2,21 @@ name: Daily Instagram Card News
 
 on:
   schedule:
-    # UTC 00:00 = KST 09:00 (GitHub 예약은 부하에 따라 지연될 수 있어 여유를 둠)
-    - cron: "0 0 * * *"
+    # GitHub 예약은 지연되거나 아예 건너뛸 수 있어, 하루 3번 시도한다.
+    # 이미 게시한 날이면 각 실행이 스스로 건너뛰므로 중복 게시는 없다.
+    # (TZ=Asia/Seoul 이므로 '한국 날짜' 기준으로 판단)
+    - cron: "0 0 * * *"   # KST 09:00  ← 기본
+    - cron: "0 3 * * *"   # KST 12:00  ← 보완
+    - cron: "0 6 * * *"   # KST 15:00  ← 최후 보완
   workflow_dispatch: {}
 
 permissions:
   contents: write
+
+# 동시에 두 개가 돌아 중복 게시되는 것을 방지
+concurrency:
+  group: daily-instagram-post
+  cancel-in-progress: false
 
 jobs:
   post:
@@ -16,30 +25,46 @@ jobs:
       - name: 체크아웃
         uses: actions/checkout@v4
 
+      - name: 날짜 계산 & 오늘 이미 게시했는지 확인
+        id: d
+        env:
+          TZ: Asia/Seoul
+        run: |
+          DATE=$(date +%F)
+          echo "date=$DATE" >> "$GITHUB_OUTPUT"
+          if [ -f "out/$DATE/posted.txt" ]; then
+            echo "already=true" >> "$GITHUB_OUTPUT"
+            echo "오늘($DATE)은 이미 게시됨 → 건너뜀"
+          else
+            echo "already=false" >> "$GITHUB_OUTPUT"
+            echo "오늘($DATE) 미게시 → 게시 진행"
+          fi
+
       - name: Node 설정
+        if: steps.d.outputs.already == 'false'
         uses: actions/setup-node@v4
         with:
           node-version: "20"
 
       - name: 컬러 이모지 폰트 설치
+        if: steps.d.outputs.already == 'false'
         run: sudo apt-get update && sudo apt-get install -y fonts-noto-color-emoji
 
       - name: 의존성 설치 (Playwright)
+        if: steps.d.outputs.already == 'false'
         run: |
           npm install
           npx playwright install --with-deps chromium
 
-      - name: 날짜 계산 (KST)
-        id: d
-        run: echo "date=$(TZ=Asia/Seoul date +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
-
       - name: 카드 렌더링
+        if: steps.d.outputs.already == 'false'
         env:
           TZ: Asia/Seoul
           OUT_DIR: out/${{ steps.d.outputs.date }}
         run: node render.mjs
 
       - name: 이미지 커밋 & 푸시
+        if: steps.d.outputs.already == 'false'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -48,8 +73,17 @@ jobs:
           git push origin HEAD:main
 
       - name: 인스타그램 게시
+        if: steps.d.outputs.already == 'false'
         env:
           TZ: Asia/Seoul
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           IMAGE_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/main/out/${{ steps.d.outputs.date }}
         run: node post_instagram.mjs
+
+      - name: 게시 완료 기록
+        if: steps.d.outputs.already == 'false'
+        run: |
+          echo "posted at $(date -u +%FT%TZ)" > "out/${{ steps.d.outputs.date }}/posted.txt"
+          git add -f "out/${{ steps.d.outputs.date }}/posted.txt"
+          git commit -m "posted ${{ steps.d.outputs.date }}" || echo "변경 없음"
+          git push origin HEAD:main
