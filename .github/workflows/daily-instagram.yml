@@ -2,8 +2,8 @@ name: Daily Instagram Card News
 
 on:
   schedule:
-    # UTC 01:00 = KST 10:00
-    - cron: "0 1 * * *"
+    # UTC 00:00 = KST 09:00 (GitHub 예약은 부하에 따라 지연될 수 있어 여유를 둠)
+    - cron: "0 0 * * *"
   workflow_dispatch: {}
 
 permissions:
