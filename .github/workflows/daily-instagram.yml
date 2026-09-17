@@ -1,13 +1,14 @@
 name: Daily Instagram Card News
 
 on:
-  schedule:
-    # GitHub 예약은 지연되거나 아예 건너뛸 수 있어, 하루 3번 시도한다.
-    # 이미 게시한 날이면 각 실행이 스스로 건너뛰므로 중복 게시는 없다.
-    # (TZ=Asia/Seoul 이므로 '한국 날짜' 기준으로 판단)
-    - cron: "0 0 * * *"   # KST 09:00  ← 기본
-    - cron: "0 3 * * *"   # KST 12:00  ← 보완
-    - cron: "0 6 * * *"   # KST 15:00  ← 최후 보완
+  # ⏸️ 2026-09-18 사용자 요청으로 자동 게시 일시 중단 (재개하려면 아래 schedule 블록 주석 해제)
+  # schedule:
+  #   # GitHub 예약은 지연되거나 아예 건너뛸 수 있어, 하루 3번 시도한다.
+  #   # 이미 게시한 날이면 각 실행이 스스로 건너뛰므로 중복 게시는 없다.
+  #   # (TZ=Asia/Seoul 이므로 '한국 날짜' 기준으로 판단)
+  #   - cron: "0 0 * * *"   # KST 09:00  ← 기본
+  #   - cron: "0 3 * * *"   # KST 12:00  ← 보완
+  #   - cron: "0 6 * * *"   # KST 15:00  ← 최후 보완
   workflow_dispatch: {}
 
 permissions:
